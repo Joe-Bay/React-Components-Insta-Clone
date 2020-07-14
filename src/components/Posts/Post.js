@@ -7,7 +7,7 @@ import PostHeader from './PostHeader';
 const Post = props => {
   // Make sure the parent of Post is passing the right props!
   const { post, likePost } = props
-
+  console.log('This is the POST -----> ', post)
   return (
     <div className='post-border'>
       <PostHeader

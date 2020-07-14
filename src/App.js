@@ -25,7 +25,7 @@ const App = () => {
     // It takes a post id as its only argument. The idea is to increase the 'likes' count of the post with the given `id`.
     setPosts(posts.map(eachPost => {
       if(eachPost.id === postId){
-        return { ...eachPost, likes: eachPost + 1}
+        return { ...eachPost, likes: eachPost.likes + 1}
       }else {
         return {eachPost}
       }
