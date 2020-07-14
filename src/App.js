@@ -27,7 +27,7 @@ const App = () => {
       if(eachPost.id === postId){
         return { ...eachPost, likes: eachPost.likes + 1}
       }else {
-        return {eachPost}
+        return eachPost
       }
     }))
     // We will update the posts slice of state using `setPosts`, passing as the new state the invocation of `posts.map()`.
